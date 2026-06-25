@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤝 Bestie Meter — seberapa bestie kalian?</title>
+  <meta name="description" content="Bestie Meter: ukur kadar pertemanan dua akun Threads dari interaksi & vibe. Iseng buat ketawa aja.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🤝 Bestie Meter">
+  <meta property="og:description" content="Masukin dua username Threads, lihat seberapa bestie kalian. Iseng buat ketawa aja 😏">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div id="input-view">
+      <div class="intro">
+        <h1>🤝 Bestie Meter</h1>
+        <p>Masukin dua akun Threads, biar "Dinas Pertemanan" kami yang nentuin seberapa bestie kalian. 😏</p>
+      </div>
+      <form id="form" autocomplete="off">
+        <label class="at" for="u1"><span>@</span><input id="u1" type="text" placeholder="username_pertama" autocapitalize="none" spellcheck="false"></label>
+        <label class="at" for="u2"><span>@</span><input id="u2" type="text" placeholder="username_kedua" autocapitalize="none" spellcheck="false"></label>
+        <button class="btn" type="submit">Ukur Kebestiean</button>
+      </form>
+      <div class="err" id="err"></div>
+      <p class="note">Iseng buat ketawa aja, bukan ukuran pertemanan beneran ya. Datanya dari profil publik Threads, sesekali bisa meleset atau lagi susah diakses. 🤷</p>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      Petugas lagi ngukur kebestiean…
+    </div>
+
+    <div id="result-view" class="hidden">
+      <div id="capture"></div>
+      <div class="verdict" id="verdict"></div>
+      <div class="actions">
+        <button class="btn" id="btn-share">Bagikan</button>
+        <button class="btn ghost" id="btn-save">Simpan PNG</button>
+        <button class="btn ghost" id="btn-again">Coba lagi</button>
+      </div>
+      <div class="share-box">
+        <label class="share-lbl" for="caption">Caption siap-bagikan</label>
+        <textarea id="caption" class="caption" rows="3" readonly></textarea>
+        <div class="chips">
+          <button class="chip" id="chip-copy">Salin caption</button>
+          <button class="chip" id="chip-wa">WhatsApp</button>
+          <button class="chip" id="chip-threads">Threads</button>
+        </div>
+        <p class="share-hint" id="share-hint"></p>
+      </div>
+    </div>
+
+  </div>
+  <script src="vendor/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
