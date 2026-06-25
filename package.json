@@ -1,0 +1,7 @@
+{
+  "name": "bestie-meter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bestie Meter — ukur kadar pertemanan dua akun Threads (satir)",
+  "engines": { "node": ">=18" }
+}
