@@ -55,7 +55,7 @@
 
     els.capture.innerHTML =
       '<div class="bm-card">' +
-        '<div class="bm-head"><span class="l">' + friends(18) + ' BESTIE METER</span><span class="r">DINAS PERTEMANAN +62</span></div>' +
+        '<div class="bm-head"><span class="l">' + friends(18) + ' <b>Bestie Meter</b></span><span class="r"><i>Dinas Per-Threads-an</i></span></div>' +
         '<div class="bm-top">' +
           photo(d.a) +
           '<div class="bm-ring">' +
